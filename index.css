@@ -268,7 +268,7 @@ display: none !important;
   /* header */
   .heroheader
   {
-     background-image: url("../frontendsite/Assets/image/Group\ 1321.svg");
+     background-image: url("./Assets/image/Group\ 1321.svg");
      background-repeat: no-repeat;
      background-size: cover;
       width: 100%;
