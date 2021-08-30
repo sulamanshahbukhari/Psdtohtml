@@ -1,0 +1,439 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+  }
+  body a {
+    text-decoration: none !important;
+ 
+    
+  }
+  /* fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  @font-face {
+    font-family: Gilroybold;
+    src: url("../frontendsite/Assets/fonts/Gilroy-ExtraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: Gilroylight;
+  src: url("../frontendsite/Assets/fonts/Gilroy-Light.otf") format("opentype");
+}
+.GlB{
+  font-family:Gilroybold ;
+}
+.Gll{
+  font-family: Gilroylight;
+}
+.robotobold{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.robotoregular{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.robotoMedium{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+  /* nav css */
+  .basenav{
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    background-color: #08083D;
+    border-bottom: 2px solid #fff;
+  }
+  .logo{
+      color: #fff;
+      font-family:Gilroybold;
+  }
+  .nav-links
+  {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    padding-top: 10px;
+    font-family:Gilroylight ;
+  }
+  .nav-links a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links a:hover{
+    color: #fff;
+  }
+  .btncontact{
+    background: #23CE6B;
+    border-radius: 5px;
+    padding: 10px 49px 10px 49px;
+    text-align: center;
+  
+  }
+  .btncontact:hover{
+    color: #fff !important;
+    background-color: #27e074;
+  }
+  .navlinkmargin
+  { margin-right: 10%;}
+  /* burger menu */
+  .burger
+  {
+    display: none;
+  }
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-links
+    {
+      width: 65%;
+     
+    }
+  }
+  @media screen and (max-width: 786px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-links
+    {
+     position: absolute;
+     text-align: center;
+     right: 0%;
+     height: 50vh;
+     top: 8vh;
+     background-color:#fff;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     transform: translateX(100%);
+     transition: transform 0.5s ease-in;
+     padding-left: 0rem;
+     display: none;
+    }
+    .nav-links li {
+      opacity: 1;
+    }
+    .nav-links a , .nav-links a:hover{
+     color: #000;
+    }
+    .burger{
+      display: block;
+    }
+    .heroimgchildimg
+    {
+      display: none;
+    }
+    /* header mobile */
+    .heroheader
+  {
+    min-height: 900px !important;
+  }
+  .mobileheaderimg{
+    display: block !important;
+    margin-top: 50px;
+  }
+  /* section 2 mobile */
+  .section2 {
+    background-image: url("./Assets/image/section2mv.png") !important;
+
+  }
+  .sec2heading{
+    color: #fff !important;
+  }
+  .sec2li{
+    color: #fff  !important;
+  }
+  .section2 ul {
+    padding: 0px 40px !important;
+  }
+  /* end of section 2 styling mv */
+  /* section 3 */
+  .amazon
+{
+display: none !important;
+}
+.giga{
+  display: none !important;
+}
+.leftarrowmobile{
+  display: block !important;
+  }
+  .rightarrowmobile{
+  display: block !important;
+  }
+  /* section 4 */
+  .section4 h1,p,a{
+    text-align: center !important;
+    padding: 0px 20px!important;
+  }
+  .teamimg{
+    display: none !important;
+  }
+  /* endof sec4 */
+/* section6 */
+.section6 h5{
+  text-align: left !important;
+}
+.mainsec6heading
+{text-align: center;
+  padding: 0px 20px !important;
+}
+/* section6 end */
+/* section 7 */
+.section7 h1,h5,p
+{
+  text-align: center !important;
+}
+/* section 8 */
+.section8 {
+  background: #08083D !important;
+}
+.section8  {
+  padding-top: 60px !important;
+
+}
+/* section 11 */
+.section11 h1,h5
+{
+  text-align: center !important;
+}
+/* footer */
+.footersec
+{
+  display: none!important;
+}
+.mobilefooter
+{
+  display: block !important;
+}
+/* next img */
+.nextimg{
+  text-align: center !important;
+}
+/* mobilesection */
+.mobilesection
+{
+  display: block !important;
+
+}
+  .roundicons
+    {
+      display: none;
+    }
+    #imgcolmasksection11{
+      display: none;
+    }
+   
+  }
+  .nav-active{
+   transform: translateX(0%);
+  }
+  
+  /* burger line toggles and transitions */
+  .line1
+  {transform: rotate(45deg) translate();
+    transition: transform 0.3s ease-in;
+  }
+  .line3
+  {transform: rotate(-45deg) translate();
+    transition: transform 0.3s ease-in;  
+  }
+  .toggle .line1{
+   transform: rotate(-45deg) translate(-5px,6px);
+   transition: transform 0.3s ease-in;
+  }
+  .toggle .line2{ opacity: 0;}
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+    transition: transform 0.3s ease-in;}
+  /* header */
+  .heroheader
+  {
+     background-image: url("../frontendsite/Assets/image/Group\ 1321.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+      width: 100%;
+      min-height: 600px;
+  }
+  .herocontainer{
+    position: absolute;
+    top: 23%;
+    left: 11%;
+   
+  }
+  .heroText{
+    font-family:Gilroybold ;
+    color: #fff;
+    font-size: 50px;
+  }
+  .heroimgchildimg
+  {
+    
+  }
+  .mobileheaderimg{
+    display: none;
+  }
+  /* header button */
+  .btn-lightgrey{
+    background-color: #6184d8;
+    font-size: 50px;
+  }
+  
+  .btn-green {
+    background-color:#23CE6B;
+    box-shadow: 0px 8px 8px #23CE6B80;
+    border-radius: 100px;
+    border:1px solid #23CE6B;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 700 ;
+    font-size:17px;
+    padding:20px 66px;
+    text-shadow:0px 1px 0px #2f6627;
+  }
+ /* section 2 styling */
+ .section2 {
+   background-image: url("./Assets/image/Group\ 2119.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 65vh;
+   padding: 80px 0px 20px ;
+
+ }
+ .section3 {
+ background-color: #08083D;
+  min-height: 100vh;
+  padding: 80px 0px 20px ;
+}
+.section4 {
+  background-color: #6184D8;
+   min-height: 100vh;
+   padding: 80px 0px 20px ;
+   opacity: 0.9;
+ }
+ /* section 5 styling */
+ .section5 {
+   
+  background-color: #FFFFFF;
+   min-height: 100vh;
+   padding: 80px 0px 20px ;
+   opacity: 0.9;
+ 
+ }
+ /* section6  */
+.section6{
+  background: transparent linear-gradient(139deg, #6184D8 0%, #08083D 100%) 0% 0% no-repeat padding-box;
+  min-height: 100vh;
+  padding: 80px 0px 20px ;
+  opacity: 0.9;
+}
+ .roundicons{
+  background: transparent linear-gradient(328deg, #4D80FB 0%, #23CE6B 100%) 0% 0% no-repeat padding-box;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  margin-bottom: 150px;
+ }
+ .roundicons img {
+  position: relative;
+  top: 20%;
+  left: 21%;
+  
+ }
+ /* section7 */
+ .section7 {
+  background-image: url("./Assets/image/Group\ 2110.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 65vh;
+  padding: 80px 0px 20px ;
+
+}
+.herocontainer2{
+  position: relative;
+    top: 23%;
+    left: 11%;
+}
+.section8 {
+  background-image: url("./Assets/image/section8blur.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 201px;
+  opacity: 0.75;
+  padding:  20px ;
+
+}
+.section9{
+  min-height: 548px;
+}
+/* section10 */
+.section10{
+  min-height: 862px;
+  background: transparent linear-gradient(114deg, #6184D8 0%, #08083D 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+/* section11 */
+.section11{
+  min-height: 55vh;
+
+}
+/* footer */
+.footersec
+{
+  background-image: url("./Assets/image/footer.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 230px;
+}
+.mobilefooter
+{
+  background-color: #08083D;
+  width: 100%;
+  min-height: 230px;
+  display: none;
+}
+.mobilesection
+{
+  width: 100%;
+  min-height: 70vh;
+  display: none;
+}
+/* section3 */
+.amazon
+{
+display: block;
+}
+.giga{
+  display: block;
+}
+.leftarrowmobile{
+display: none;
+}
+.rightarrowmobile{
+display: none;
+}
