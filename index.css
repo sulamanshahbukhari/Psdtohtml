@@ -16,11 +16,11 @@ body{
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
   @font-face {
     font-family: Gilroybold;
-    src: url("../frontendsite/Assets/fonts/Gilroy-ExtraBold.otf") format("opentype");
+    src: url("./Assets/fonts/Gilroy-ExtraBold.otf") format("opentype");
 }
 @font-face {
   font-family: Gilroylight;
-  src: url("../frontendsite/Assets/fonts/Gilroy-Light.otf") format("opentype");
+  src: url("./Assets/fonts/Gilroy-Light.otf") format("opentype");
 }
 .GlB{
   font-family:Gilroybold ;
